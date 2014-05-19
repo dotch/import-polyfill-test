@@ -6,9 +6,9 @@
   var element = Object.create(HTMLElement.prototype);
 
   element.createdCallback = function() {
-    this.hello = document.createElement('h1');
+    var hello = document.createElement('h1');
     hello.innerHTML = "Hello World";
-    this.appendChild(this.hello);
+    this.appendChild(hello);
     console.log("hello");
   };
 
