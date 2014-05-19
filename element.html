@@ -7,12 +7,13 @@
 
   element.createdCallback = function() {
     this.hello = document.createElemment('h1');
+    hello.innerHTML "Hello World";
     this.appendChild(this.hello);
   };
 
   document.registerElement('x-hello', {
     prototype: element
   });
-  
+
 }());
 </script>
